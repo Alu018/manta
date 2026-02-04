@@ -39,8 +39,7 @@ def multi_turn_conversation():
             # Fallback to simple generation if no turns in metadata
             return await generate(state)
 
-        # Start with the first turn already in state.messages
-        # (It was added from Sample.input)
+        # Start with the first turn already in state.messages (It was added from Sample.input)
 
         # Generate response to Turn 1
         state = await generate(state)
